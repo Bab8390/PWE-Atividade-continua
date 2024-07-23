@@ -5,17 +5,48 @@
 <title>Contato - IFSP - Pirituba</title>
 <script src="js/disabling.js"></script>
 </head>
-  <div id="my_menu" align="right">
-    <a href="index.html">HOME</a> | <a href="contato.html">CONTATO</a> | <a href="sobre.html">SOBRE</a> | <a href="eventos.html">EVENTOS</a> | <a href="entrar.html">ENTRAR</a>
-  </div>
 <body>
   
-  <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+  <header id="cabecalho"> 
     <nav>
       <object width="100%" height="65px" data="menu.html"></object>
     </nav>
   </header>
-  <h1>Contato</h1>
-  <h2>Entendendo a IDE do Github</h2>
+  <img src="Imagens/Logo.jpg" alt=" " />
+  <h1>Mande uma Mensagem</h1>
+  <form name='contato' method="POST">
+  Nome <input type="text" placeholder="Nome" required><br>
+  E-mail <input type="email" placeholder="Email" required><br>
+  Telefone <input type="tel" placeholder="(00) 00000-0000" required> (99) 99999-9999<br>
+    <form name="evento">
+        Evento
+        <select name="evento" required>
+        <option value="">-- Selecione --</option>
+        <option value="ra">Reclamação</option>
+        <option value="sa">Sugestão</option>
+      </select>
+      <br><textarea></textarea>
+    </form>
+    <form>
+      Mensagem<br>
+    <fieldset name="opções de resposta">
+      <legend>Opções de Resposta</legend>
+      <form>
+        E-mail <input type="checkbox" name="op2" value="op2">
+        Telefone <input type="checkbox" name="op1" value="op1">
+      </form>
+    </fieldset>
+    </form>
+    <button type="submit" form="contato">Enviar</button>
+  </form>
 </body>
+<footer>
+    <br><br>
+    <div id="my_menu" align="left">
+        <a href="https://www.facebook.com/ifsppirituba"><img src="Imagens/facebook.png" width="41" height="43" title="IFSP Facebook" alt="IFSP Facebook"></a>
+    </div>
+    <p>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+    </p>
+</footer>
 </html>
